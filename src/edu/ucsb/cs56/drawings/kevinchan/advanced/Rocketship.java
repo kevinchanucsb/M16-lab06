@@ -24,16 +24,18 @@ public class Rocketship extends Rocket implements Shape
 	// get the GeneralPath that we are going to append stuff to
 	GeneralPath gp = this.get();
 	
-	// create 3 mini  (windows)ellipses that are a 1/4th of the cabin ellipse
+	// create 3 mini (windows) ellipses
+	// Each window's height is 15% of the Rocket's height
+	// Each window's width is 25% of the Rocket's width
 	double windowHeight = .15* height * 1.5;
 	double windowWidth = .25* width;
-	double windowPlacement = height*.2; //helper for each y-coordina1
+	double windowPlacement = height*.2; //helper for each y-coordinate
 
 	Ellipse2D.Double window1 = new Ellipse2D.Double (x + 0.4 * width,y + windowPlacement,windowWidth,windowHeight);
 	Ellipse2D.Double window2 = new Ellipse2D.Double (x + 0.4 * width,y + windowPlacement + height * .25,windowWidth,windowHeight);
 	Ellipse2D.Double window3 = new Ellipse2D.Double (x + 0.4 * width,y + windowPlacement + height * .5,windowWidth,windowHeight);	
 
-	// create 3 streams that are lines 1/8th of the total height
+	// create 3 streams using lines
 	double streamLength = 0.2* height;
 	double baseHeight = height * 0.2;
 	double rocketWidth = width;

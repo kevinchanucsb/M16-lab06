@@ -7,7 +7,7 @@ import javax.swing.JComponent;
 /**
    A component that draws a Picture by Kevin Chan
    
-   @author Phill Conrad (original drawing)
+   @author Kevin Chan (original drawing)
    @version CS56, M16, UCSB
 */
 

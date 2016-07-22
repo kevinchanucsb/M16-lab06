@@ -39,7 +39,7 @@ public class Rocket extends GeneralPathWrapper implements Shape
         
         // 1.Make the rocket
         double rocketWidth = width;
-        double rocketHeight = height * 1.5; //to elongate the ellipse vertically
+        double rocketHeight = height * 1.5; //1.5 is to elongate the ellipse vertically
 
 
         Ellipse2D.Double rocketMain = new Ellipse2D.Double (x,y,rocketWidth,rocketHeight);
@@ -60,7 +60,6 @@ public class Rocket extends GeneralPathWrapper implements Shape
             new Line2D.Double (x,y + baseHeight + rocketHeight, x + rocketWidth, y + baseHeight + rocketHeight );
 	
         // put the whole rocket together
-	
         GeneralPath wholeRocket = this.get();
         wholeRocket.append(leftBase, false);
         wholeRocket.append(rightBase, false);
