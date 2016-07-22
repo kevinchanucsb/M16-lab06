@@ -47,7 +47,6 @@ public class Rocket extends GeneralPathWrapper implements Shape
 
         // 2.Make base (triangle)
         double baseHeight = height * 0.2;
-        double baseWidth = baseHeight;
 
         Line2D.Double leftBase = 
             new Line2D.Double (x, y + baseHeight + rocketHeight,
